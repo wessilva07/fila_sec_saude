@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Filas para Chamados</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mt-4 mb-4">Sistema de Filas para Chamados</h1>
+
+      <div id="fila" class="mb-4"></div>
+
+      <button
+        class="btn btn-primary mr-2"
+        onclick="adicionarChamado('Marcar horario do Transporte')"
+      >
+        Transporte
+      </button>
+      <button
+        class="btn btn-primary mr-2"
+        onclick="adicionarChamado('Marcaçao de consulta, exames')"
+      >
+        Marcação de Consulta
+      </button>
+      <button
+        class="btn btn-primary mr-2"
+        onclick="adicionarChamado('Internação em geral')"
+      >
+       Internação
+      </button>
+      <button class="btn btn-danger" onclick="atenderProximoChamado()">
+        Atender Próximo Chamado
+      </button>
+    </div>
+
+    <script src="javascript/script.js"></script>
+  </body>
+</html>
